@@ -18,8 +18,8 @@ output "vm" {
   value = format("${var.prefix}-vm-%s", join("-", compact([lower(var.name), var.purpose, lower(var.environment), lower(var.region_shortname)])))
 }
 
-output "gks" {
-  value = format("${var.prefix}-gks-%s", join("-", compact([lower(var.name), var.purpose, lower(var.environment), lower(var.region_shortname)])))
+output "gke" {
+  value = format("${var.prefix}-gke-%s", join("-", compact([lower(var.name), var.purpose, lower(var.environment), lower(var.region_shortname)])))
 }
 
 output "sgr" {
