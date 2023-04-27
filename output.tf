@@ -34,3 +34,6 @@ output "role" {
   value = format("${var.prefix}-rle-%s", join("-", compact([lower(var.name), var.purpose, lower(var.environment), lower(var.region_shortname)])))
 }
 
+output "vpn" {
+  value = format("${var.prefix}-vpn-%s", join("-", compact([lower(var.name), var.purpose, lower(var.environment), lower(var.region_shortname)])))
+}
