@@ -53,3 +53,7 @@ output "cbv2con" {
 output "cbv2repo" {
   value = format("${var.prefix}-cbv2repo-%s", join("-", compact([lower(var.name), var.purpose, lower(var.environment), lower(var.region_shortname)])))
 }
+
+output "trig" {
+  value = format("${var.prefix}-trig-%s", join("-", compact([lower(var.name), var.purpose, lower(var.environment), lower(var.region_shortname)])))
+}
